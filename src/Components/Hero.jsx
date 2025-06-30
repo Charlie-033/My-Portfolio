@@ -33,14 +33,14 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Charlie-033/"
               target="_blank"
               className="p-3 rounded-full bg-gray-800 text-white hover:scale-110 hover:bg-black transition-all"
             >
               <FaGithub />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://web.facebook.com/eleus.ahmed.2025/"
               target="_blank"
               className="p-3 rounded-full bg-blue-600 text-white hover:scale-110 hover:bg-blue-700 transition-all"
             >

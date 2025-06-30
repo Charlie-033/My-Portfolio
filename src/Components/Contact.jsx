@@ -37,22 +37,17 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-24 px-6 md:px-12 lg:px-24 bg-[#ECF5FF] dark:bg-gray-900"
+      className="py-24 px-6 md:px-12 lg:px-24 bg-[#ECF5FF] dark:bg-gray-900 transition-all"
     >
       <h2 className="text-4xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white font-raleway">
         Contact With Me
       </h2>
       <p className="text-center max-w-4xl mx-auto text-gray-600 dark:text-gray-300 mb-12">
-        Here are some of the real-world projects I've built to sharpen my
-        development skills and solve practical problems. I focus on creating
-        responsive, user-friendly, and scalable applications using modern
-        technologies like React, Node.js, MongoDB, and Tailwind CSS. Each
-        project reflects my passion for clean code, intuitive UX, and continual
-        growth as a developer.
+        I'm always open to discussing new opportunities, creative ideas, or potential collaborations. Whether you have a question, a project in mind, or just want to say hello — feel free to reach out! I’ll try my best to respond as quickly as possible.
       </p>
       <div className="max-w-5xl mx-auto border-2 border-[#5e7999] rounded-2xl p-6 md:p-10 flex flex-col lg:flex-row gap-6 bg-transparent">
         {/* Left Card */}
-        <div className="flex-1 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-md p-6 space-y-6">
+        <div className="flex-1 flex flex-col justify-center items-start bg-gray-50 dark:bg-gray-800 rounded-xl shadow-md p-6 space-y-6">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
             Let's Connect
           </h2>
