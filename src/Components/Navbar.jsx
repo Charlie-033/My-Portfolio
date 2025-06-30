@@ -12,8 +12,8 @@ const Navbar = () => {
     <nav className="w-full sticky top-0 z-50 bg-[#FDF7F0] dark:bg-gray-900 shadow-md transition-all">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:py-4">
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 font-raleway">
-          Eleus.Dev
+        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 font-raleway flex items-center gap-4">
+          <img src="https://i.ibb.co/Myv62SpZ/professional-portfolio.png" width={25}/>Eleus.Dev
         </div>
 
         {/* Desktop Menu */}

@@ -65,12 +65,6 @@ const skillsBottom = [
     description: "Minimal backend framework.",
     category: "Backend",
   },
-  {
-    name: "Git & GitHub",
-    icon: <FaGithub className="text-gray-800 dark:text-gray-200 text-4xl" />,
-    description: "Version control & collaboration.",
-    category: "Tools",
-  },
 ];
 
 const SkillRow = ({ skills }) => (
@@ -103,13 +97,21 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="bg-[#ECF5FF] dark:bg-gray-900 py-20 px-6 md:px-12 lg:px-24 transition-colors"
+      className="bg-[#ECF5FF] dark:bg-gray-900 pt-24 px-6 md:px-12 lg:px-24 transition-colors"
     >
       <div className="max-w-7xl mx-auto text-center space-y-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white font-raleway">
           My Skills
         </h2>
-
+        <p className="text-center max-w-4xl mx-auto text-gray-600 dark:text-gray-300 mb-12">
+          Over time, I’ve developed a strong foundation in modern web
+          technologies by building real-world applications from scratch. My core
+          skills span both frontend and backend development — from crafting
+          responsive user interfaces with React and Tailwind CSS to handling
+          server logic and databases using Node.js, Express, and MongoDB. I
+          continuously explore new tools, libraries, and best practices to write
+          clean, maintainable code and deliver high-quality web experiences.
+        </p>
         <div className="space-y-10">
           <SkillRow skills={skillsTop} />
           <SkillRow skills={skillsMiddle} />
