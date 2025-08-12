@@ -32,14 +32,11 @@ const Footer = () => {
             <a href="https://github.com/Charlie-033" target="_blank" rel="noopener noreferrer">
               <FaGithub className="hover:text-black dark:hover:text-white" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/eleus-ahmed/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="hover:text-blue-600" />
             </a>
             <a href="https://web.facebook.com/eleus.ahmed.2025/" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="hover:text-blue-500" />
-            </a>
-            <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
-              <FaGlobe className="hover:text-green-500" />
             </a>
           </div>
         </div>

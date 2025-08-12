@@ -26,7 +26,7 @@ const Hero = () => {
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start gap-4 mt-4">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/eleus-ahmed/"
               target="_blank"
               className="p-3 rounded-full bg-blue-500 text-white hover:scale-110 hover:bg-blue-600 transition-all"
             >
@@ -51,8 +51,8 @@ const Hero = () => {
           {/* Resume Button */}
           <div className="mt-6">
             <a
-              href="/resume.pdf"
-              download
+              href="/public/ELEUS AHMED Full Stack Resume .pdf"
+              download="Eleus_Ahmed_Resume.pdf"
               className="inline-flex items-center gap-2 bg-blue-600 text-white 
               px-4 py-2 text-sm md:text-base rounded hover:bg-blue-700 transition-all"
             >

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -7,32 +7,38 @@ import {
   FaGithub,
   FaFacebook,
 } from "react-icons/fa";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("")
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
-  e.preventDefault();
-  const params = {
-    from_name: name,
-    form_email: email,
-    message
-  }
-  
-  emailjs.send("service_lpcrc4o", "template_02sf9g1", params, "adu_XGNYc-YP_2Vo8")
-    .then((response) => {
-      alert("Message sent successfully!");
-      console.log(response)
-    })
-    .catch((error) => {
-      alert("Something went wrong.");
-      console.log(error)
-    });
-};
+    e.preventDefault();
+    const params = {
+      from_name: name,
+      from_email: email,
+      message,
+    };
 
+    emailjs
+      .send("service_lpcrc4o", "template_02sf9g1", params, "adu_XGNYc-YP_2Vo8")
+      .then((response) => {
+        Swal.fire({
+          title: "Message sent successfully!",
+          icon: "success",
+          draggable: true,
+        });
+        // console.log(response)
+      })
+      .catch((error) => {
+        Swal.fire("Something went wrong!❌ Please try again.");
+
+        // console.log(error)
+      });
+  };
 
   return (
     <section
@@ -43,7 +49,10 @@ const Contact = () => {
         Contact With Me
       </h2>
       <p className="text-center max-w-4xl mx-auto text-gray-600 dark:text-gray-300 mb-12">
-        I'm always open to discussing new opportunities, creative ideas, or potential collaborations. Whether you have a question, a project in mind, or just want to say hello — feel free to reach out! I’ll try my best to respond as quickly as possible.
+        I'm always open to discussing new opportunities, creative ideas, or
+        potential collaborations. Whether you have a question, a project in
+        mind, or just want to say hello — feel free to reach out! I’ll try my
+        best to respond as quickly as possible.
       </p>
       <div className="max-w-5xl mx-auto border-2 border-[#5e7999] rounded-2xl p-6 md:p-10 flex flex-col lg:flex-row gap-6 bg-transparent">
         {/* Left Card */}

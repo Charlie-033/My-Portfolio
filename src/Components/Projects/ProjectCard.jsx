@@ -53,7 +53,7 @@ const ProjectCard = ({ project }) => {
             href={project.live}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded transition"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white text-sm px-3 md:px-4 py-2 rounded transition"
           >
             <FaExternalLinkAlt />
             Live
@@ -62,14 +62,14 @@ const ProjectCard = ({ project }) => {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white text-sm px-4 py-2 rounded transition"
+            className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white text-sm px-3 md:px-4 py-2 rounded transition"
           >
             <FaGithub />
             GitHub
           </a>
           <a
             href={`/projects/${project.slug}`}
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded transition"
+            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 md:px-4 py-2 rounded transition"
           >
             <FaInfoCircle />
             Details

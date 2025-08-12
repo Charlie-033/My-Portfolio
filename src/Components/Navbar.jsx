@@ -45,8 +45,8 @@ const Navbar = () => {
 
           {/* Resume button (hidden on small screens) */}
           <a
-            href="/resume.pdf"
-            download
+            href="/public/ELEUS AHMED Full Stack Resume .pdf"
+            download="Eleus_Ahmed_Resume.pdf"
             className="flex items-center gap-2 bg-blue-600 text-white 
              px-2 py-1 text-sm rounded hover:bg-blue-700 transition-all 
              md:px-4 md:py-2 md:text-base"

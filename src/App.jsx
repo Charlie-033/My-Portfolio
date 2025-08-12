@@ -10,10 +10,10 @@ import "./index.css";
 
 function App() {
   return (
-    <body className="bg-[#ECF5FF]">
-      <navbar>
+    <div className="bg-[#ECF5FF]">
+      <nav>
         <Navbar />
-      </navbar>
+      </nav>
       <main>
         <Hero />
         <About />
@@ -24,7 +24,7 @@ function App() {
       <footer>
         <Footer/>
       </footer>
-    </body>
+    </div>
   );
 }
 
