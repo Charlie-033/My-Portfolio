@@ -51,7 +51,7 @@ const Hero = () => {
           {/* Resume Button */}
           <div className="mt-6">
             <a
-              href="/public/ELEUS AHMED Full Stack Resume .pdf"
+              href="/ELEUS AHMED Full Stack Resume .pdf"
               download="Eleus_Ahmed_Resume.pdf"
               className="inline-flex items-center gap-2 bg-blue-600 text-white 
               px-4 py-2 text-sm md:text-base rounded hover:bg-blue-700 transition-all"
